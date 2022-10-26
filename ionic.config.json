@@ -1,0 +1,7 @@
+{
+  "name": "Better.me",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
