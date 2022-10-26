@@ -44,7 +44,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!(@ionic/react|@ionic/react-router|@ionic/core|@stencil/core|ionicons)/)'",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "husky install",
+    "commit": "git cz"
   },
   "eslintConfig": {
     "extends": [
@@ -71,12 +73,17 @@
     "@typescript-eslint/parser": "^5.41.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.26.0",
-    "eslint-plugin-react": "^7.31.10"
+    "eslint-plugin-react": "^7.31.10",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3"
   },
   "description": "An Ionic project",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
