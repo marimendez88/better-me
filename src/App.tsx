@@ -1,4 +1,3 @@
-import React from "react";
 import { Redirect, Route } from "react-router-dom";
 import {
   IonApp,
@@ -55,6 +54,7 @@ const App: React.FC = () => (
             <Redirect to="/tab1" />
           </Route>
         </IonRouterOutlet>
+        {/* Create component of botton nav here:  */}
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/tab1">
             <IonIcon icon={triangle} />
